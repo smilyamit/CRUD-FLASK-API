@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unconventional Sum</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1 class="headA"  >Unconventional Sum </h1>
+     <h2 class="headB" >Please enter the integer value </h2>
+
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="value_1" placeholder="Value 1" required="required" />
+    	<input type="text" name="value_2" placeholder="Value 2" required="required" />
+    	<input type="text" name="value_3" placeholder="Value 3" required="required" />
+    	<input type="text" name="value_4" placeholder="Value 4" required="required" />
+    	<input type="text" name="value_5" placeholder="Value 5" required="required" />
+    	<input type="text" name="value_6" placeholder="Value 6" required="required" />
+
+
+
+        <button type="submit" class="myBtn">Click Me</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

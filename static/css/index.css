@@ -1,0 +1,45 @@
+
+.login{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: cursive, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+
+}
+
+.headA {
+  position: absolute;
+  transform: translate(0, -12rem);
+}
+
+.headB {
+  position: absolute;
+  transform: translate(0, -8rem);
+}
+
+input {
+  border: 2px solid hsl(200, 100%, 50%);
+  outline: none;
+  border-radius: 1000000px;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  color: rgb(0, 0, 200);;
+}
+
+.myBtn {
+  border: none;
+  outline: none;
+  border-radius: 10000px;
+  margin: 1rem;
+  padding: .5em 1em;
+  background: hsl(200, 100%, 50%);
+
+}
